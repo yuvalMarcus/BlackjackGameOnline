@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blackjack</title>
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="background-green">
+</div>
+
+<nav class="menu bg-dark text-light">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-10 game-panel">
+                <!--<strong>Game Status : </strong>-->
+                &nbsp;Blackjack
+                <!--<span class="game-status">waiting</span>-->
+            </div>
+            <div class="col-sm-2 text-right">
+                <button class="btn btn-info btn-menu">Menu</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="menu-full-screen" style="display: none">
+    <div class="menu">
+        <div class="close">Close</div>
+        <h2>Menu Game</h2>
+        <div class="box">
+            <h3>New Game</h3>
+            <button class="btn btn-info new-game" data-level="normal">Start a New Game</button>
+        </div>
+        <div class="box">
+            <h3>Restart Game</h3>
+            <button class="btn btn-info restart-game" data-level="normal">Restart This Game</button>
+        </div>
+    </div>
+</div>
+
+<div class="popup-full-screen" style="display: none">
+    <div class="content">
+        <div class="close">Close</div>
+        <h2>Select Number</h2>
+        <div class="box">
+            <div class="row choice-number">
+                <div class="col-sm-6 text-center choice-number">
+                    <span class="choice-number-1">1</span>
+                </div>
+                <div class="col-sm-6 text-center choice-number">
+                    <span class="choice-number-11">11</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="board-game dealer-player cards-hidden">
+    <div class="container">
+        <div class="content">
+            <div class="row hands">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="box-status">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="content">
+                    <h2 class="text">Game waiting</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="box-alert" style="display: none">
+    <div class="alert alert-danger content" role="alert">
+
+    </div>
+</div>
+
+<div class="board-game human-player">
+    <div class="container">
+        <div class="content">
+            <div class="row">
+                <div class="col-sm-6 column column-pos-6 text-center">
+                    Money : <span class="money">0</span>
+                </div>
+                <div class="col-sm-6 column column-pos-6 text-center">
+                    Hands : <span class="hands">0</span>
+                </div>
+            </div>
+            <div class="row hands">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/bundle.js"></script></body>
+</html>
