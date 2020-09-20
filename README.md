@@ -1,5 +1,4 @@
 # BlackjackGameOnline
 Blackjack Game Online
 
-sdsdda 
-adasdasdsa  asdasdd
+Blackjack game which is built in javascript 6+
