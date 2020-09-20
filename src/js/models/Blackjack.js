@@ -29,10 +29,6 @@ export default class Blackjack {
         return PlayerHand;
     }
 
-    gameEnded() {
-
-    }
-
     newGame() {
 
         this.state.humanPlayer.hands = [];
