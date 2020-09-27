@@ -62,8 +62,6 @@ const controlCore = (index) => {
 
         blackjack.setGameStatus('finished');
 
-        elements.menuGameStatus.textContent = 'finished';
-
         elements.boxStatusText.textContent = `Game finished`;
 
         document.querySelector('.board-game.dealer-player').classList.remove('cards-hidden');
@@ -117,8 +115,6 @@ document.querySelector('.board-game.human-player .send-bet').addEventListener('c
     handView.renderHand(0, state.dealerPlayer, 'dealer');
 
     blackjack.setGameStatus('play');
-
-    elements.menuGameStatus.textContent = 'play';
 
     elements.boxStatusText.textContent = `Game play`;
 
@@ -198,6 +194,9 @@ elements.playerBoard.addEventListener('click', e => {
     if(e.target.matches('.do-split')) {
 
         const index = parseInt(e.target.closest('.do-split').dataset.index, 10);
+
+        if(state.humanPlayer.hands[index].cards.length <= 1)
+            return;
 
         const lastIndexCard = state.humanPlayer.hands[index].cards.length - 1;
 

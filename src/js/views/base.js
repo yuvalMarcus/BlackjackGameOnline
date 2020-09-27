@@ -8,7 +8,6 @@ export const elements = {
     choiceNumber: document.querySelector('.choice-number'),
     choiceNumber1: document.querySelector('.choice-number-1'),
     choiceNumber11: document.querySelector('.choice-number-11'),
-    menuGameStatus: document.querySelector('.menu .game-status'),
     btnMenu: document.querySelector('.btn-menu'),
     menuFullScreen: document.querySelector('.menu-full-screen'),
     menuFullScreenClose: document.querySelector('.menu-full-screen .close'),
@@ -27,8 +26,6 @@ export const clearBoard = () => {
     document.querySelector('.board-game.dealer-player .row.hands').innerHTML = '';
 
     elements.playerHands.textContent = '0';
-
-    elements.menuGameStatus.textContent = 'waiting';
 
     elements.boxStatusText.textContent = `Game waiting`;
 
