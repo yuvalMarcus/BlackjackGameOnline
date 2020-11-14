@@ -1,7 +1,7 @@
 {
-  "name": "forkify",
+  "name": "blackjack",
   "version": "1.0.0",
-  "description": "forkify project",
+  "description": "blackjack project",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
